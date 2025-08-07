@@ -1,0 +1,26 @@
+﻿@model List<MvcSiparisApi.Web.Models.SiparisViewModel>
+
+<h2>Sipariş Listesi</h2>
+
+<table class="table table-striped">
+    <thead>
+        <p>Sipariş verileri saatte bir güncellenmektedir.</p>
+        <tr>
+            <th>Ad</th>
+            <th>Ürün</th>
+            <th>Adet</th>
+            <th>Tarih</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var siparis in Model)
+        {
+            <tr>
+                <td>@siparis.MusteriAdi</td>
+                <td>@siparis.UrunAdi</td>
+                <td>@siparis.Adet</td>
+                <td>@siparis.SiparisTarihi.ToString("dd.MM.yyyy HH:mm")</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,24 @@
+﻿@model MvcSiparisApi.Web.Models.SiparisViewModel
+<h2>Yeni Sipariş</h2>
+
+<form asp-action="Yeni" method="post">
+    <div>
+        <label>Müşteri Adı:</label>
+        <input asp-for="MusteriAdi" class="form-control" />
+    </div>
+    <div>
+        <label>Ürün Adı:</label>
+        <input asp-for="UrunAdi" class="form-control" />
+    </div>
+    <div>
+        <label>Adet:</label>
+        <input asp-for="Adet" type="number" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-success">Sipariş Gönder</button>
+</form>
+
+@if (ViewBag.Mesaj != null)
+{
+    <div class="alert alert-info mt-3">@ViewBag.Mesaj</div>
+}
