@@ -113,6 +113,6 @@ Pull request'ler ve katkılar memnuniyetle karşılanır. 🎯
 
 ## 🧠 Lisans
 
-MIT Lisansı ile lisanslanmıştır.
+Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
 
 ---
